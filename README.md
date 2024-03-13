@@ -5,12 +5,12 @@
 
 __Table of Contents__
 - [Abstract](#abstract)
-- [Project Work](#project-work)
+- [Project Work](#project)
 - [Setup](#setup)
 - [Installation of Bases](#installation-of-bases)
   * [MetaWorld](#metaworld)
   * [MuJoCo](#mujoco)
-  * [MuJoCo Menagerie](#mujoco-menagerie)
+  * [MuJoCo Menagerie](#menagerie)
 - [References](#references)
 - [Credits](#credits)
 
@@ -18,11 +18,11 @@ __Table of Contents__
 
 __GenReL-World is a general Reinforcement Learning framework to utilize various world models as environments for robot manipulation.__
 
-The goal is to contrust the framework witch utilizes general reinforcement learning algorithms to control a robotic arm. A big problem in robotics is, that they adapt hardly to new environments or to task, which fall out to the trained task distribution. 
-The adaptation of a general framework can be worthwhile if they can be intagrated to be trained on different world models. 
+The goal is to contrust the framework which utilizes general reinforcement learning algorithms to control a robotic arm. A big problem in robotics is that they adapt hardly to new environments or tasks, which fall out to the trained task distribution. 
+The adaptation of a general framework can be worthwhile if they can be integrated to be trained on different world models. 
 
 With that only the world model and the encoding to a lower latent representation have to be switched. 
-Implementing the different algorithms and finding connections between them is an ongoing research area, which can play a crutial part in robotics. 
+Implementing the different algorithms and finding connections between them is an ongoing research area and can play a crutial part in robotics. 
 
 The framework involves reinforcement learning concepts from [(0)](https://www.andrew.cmu.edu/course/10-703/textbook/BartoSutton.pdf) and meta-reinforcement learning and multi-task learning using the MetaWorld open-source simulated benchmark [(1)](https://meta-world.github.io/). 
 
@@ -61,7 +61,7 @@ To install MetaWorld follow the [installation steps](https://github.com/Farama-F
 The README of MetaWorld is a worthwhile read which can be found [here](https://github.com/Farama-Foundation/Metaworld/blob/master/README.md).
 
 A visualization of MetaWorld can be done in MuJoCo's 3D environment with running [testMetaW.py](https://github.com/CIMBIBOY/GenReL-World/blob/main/testMetaW.py). 
-It is advised to create the testMetaW.py in the instalaltion folder of MetaWorld: /path/to//metaworld here create testMetaW.py. 
+It is advised to create the testMetaW.py in the installation folder of MetaWorld: /path/to//metaworld here create testMetaW.py. 
 
 The python script can be run with mjpython from a terminal window by finding the path to mujoco instalaltion: /path/to/mujoco/bin/mjpython. 
 If the file does not have the execute permission, it can be added by running: chmod +x /path/to/testMetaW.py. 
@@ -75,16 +75,16 @@ MuJoCo can also be downloaded from the [offical site](https://mujoco.org/).
 
 ### MuJoCo Menagerie
 To install MuJoCo Menagerie follow the installation steps on the [MuJoCo Menagerie github](https://github.com/google-deepmind/mujoco_menagerie/tree/main?tab=readme-ov-file#installation-and-usage). To visalize xArm7 run the [testxArm7.py](https://github.com/CIMBIBOY/GenReL-World/blob/main/testxArm7.py). 
-It is advised to create the testxArm7.py in the instalaltion folder of MetaWorld: /path/to//metaworld here create testxArm7.py.
+It is advised to create the testxArm7.py in the installation folder of MetaWorld: /path/to//metaworld here create testxArm7.py.
 
 The path to xArm7's xml file have to be specified in testxArm7.py in line: 
 mujoco.MjModel.from_xml_path('/path/to/mujoco_menagerie/ufactory_xarm7/xarm7.xml'). 
 
 The python script can be run with mjpython from a terminal window by finding the path to mujoco instalaltion: /path/to/mujoco/bin/mjpython. If the file does not have the execute permission, it can be added by running: chmod +x /path/to/testxArm7.py. 
 
-To run use: mjpython /path/to/testxArm7.py. The script intagrates xArm7 xml into MuJoCo for visualization. 
+To run use: mjpython /path/to/testxArm7.py. The script integrates xArm7 xml into MuJoCo for visualization. 
 
-The xarm7.xml can also be dragged to MuJoCo app downloaded from the official cite.
+The xarm7.xml can also be dragged to MuJoCo app downloaded from the official site.
 
 ## References 
 
